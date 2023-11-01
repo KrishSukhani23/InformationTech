@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="http://api.ipstack.com/134.201.250.155? access_key = 376a21b66069ce8f3c270fed21d212c7
+    & callback = MY_FUNCTION">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='map'></div>
+
+</body>
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.js'></script>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1Ijoia3Jhenp5MjMwOSIsImEiOiJja2w4NWFxeHkwY205MnBydmExYTlkOHZ4In0.fEkNopN0WDG5KVs87ZlIIg';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/dark-v10',
+        zoom: 2
+    });
+</script>
+<script src="index.js"></script>
+
+</html>
